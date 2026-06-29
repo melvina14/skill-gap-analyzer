@@ -90,7 +90,7 @@ function Home() {
             <TrendingUp className="h-3.5 w-3.5" /> Data Analytics Research Project
           </div>
           <h1 className="animate-float-up mt-6 max-w-4xl text-4xl font-extrabold leading-[1.05] sm:text-5xl lg:text-6xl">
-            Skill Gap <span className="text-primary-foreground/70">Analyzer</span>
+            Skill Gap Analyzer
           </h1>
           <p className="animate-float-up mt-6 max-w-2xl text-lg font-semibold text-primary-foreground/90 sm:text-xl">
             Bridging the Gap Between Student Skills and Industry Needs
