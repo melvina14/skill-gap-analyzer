@@ -117,7 +117,7 @@ function Home() {
       </section>
 
       {/* Stats */}
-      <Section className="-mt-12 lg:-mt-16">
+      <Section className="mt-8">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <StatCard accent value={TOTAL_JOBS} label="Job Postings Analyzed" icon={<Briefcase className="h-5 w-5" />} />
           <StatCard value={TOTAL_STUDENTS} label="Student Responses Collected" icon={<Users className="h-5 w-5" />} />
