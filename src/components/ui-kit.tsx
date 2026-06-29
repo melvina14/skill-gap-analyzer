@@ -14,7 +14,7 @@ export function PageHeader({
     <section className="relative overflow-hidden bg-gradient-hero text-primary-foreground">
       <div className="absolute inset-0 bg-grid opacity-40" />
       <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-secondary/30 blur-3xl" />
-      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+      <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-14">
         {eyebrow && (
           <p className="animate-float-up text-sm font-semibold uppercase tracking-[0.2em] text-primary-foreground/70">
             {eyebrow}
@@ -41,7 +41,7 @@ export function Section({
   className?: string;
 }) {
   return (
-    <section className={cn("mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16", className)}>
+    <section className={cn("mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-10", className)}>
       {children}
     </section>
   );
@@ -57,7 +57,7 @@ export function SectionTitle({
   className?: string;
 }) {
   return (
-    <div className={cn("mb-8 max-w-2xl", className)}>
+    <div className={cn("mb-5 max-w-2xl", className)}>
       <h2 className="text-2xl font-bold sm:text-3xl">{title}</h2>
       {subtitle && <p className="mt-3 text-muted-foreground">{subtitle}</p>}
     </div>
@@ -74,7 +74,7 @@ export function Card({
   return (
     <div
       className={cn(
-        "rounded-2xl border border-border bg-card p-6 text-card-foreground shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow",
+        "rounded-2xl border border-border bg-card p-5 text-card-foreground shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow",
         className,
       )}
     >

@@ -51,7 +51,15 @@ function Assessment() {
     return { readiness, industryMatch, strong, missingHigh, recommended };
   }
 
-  const analyze = () => setResult(compute(selected));
+  const analyze = () => {
+  const res = compute(selected);
+  setResult(res);
+
+  localStorage.setItem(
+    "recommendedSkills",
+    JSON.stringify(res.recommended.map((s) => s.skill))
+  );
+};
   const reset = () => {
     setSelected(new Set());
     setResult(null);
